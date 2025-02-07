@@ -5,9 +5,6 @@
 # 4: gameplay
 # 5: post-game
 
-# Game generating tick callback
-execute if score #game status matches 1 run function tr:game/callbacks/tick/generating
-
 execute if score #game status matches 2 run function tr:game/player/setup_players
 execute if score #game status matches 3 run function tr:game/wait_to_start
 execute if score #game status matches 4 run function tr:game/running

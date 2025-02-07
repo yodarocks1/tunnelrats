@@ -84,3 +84,6 @@ schedule function tr:lobby/ad/global_info 1s
 
 # reset spawnpoints
 spawnpoint @a 0 200 0
+
+# Game load callback
+function tr:game/callbacks/load

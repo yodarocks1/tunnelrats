@@ -14,3 +14,6 @@ execute if score #generation status matches 4..5 run title @a actionbar [{"color
 
 execute as @a[x=-2,y=200,z=-2,dx=4,dy=4,dz=4] run function tr:player/join
 gamemode spectator @a[gamemode=!spectator]
+
+# Game generating tick callback
+function tr:game/callbacks/tick/generating
