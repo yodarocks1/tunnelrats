@@ -14,7 +14,8 @@ execute store result storage tr:admin map.id int 1 run scoreboard players operat
 function tr:lobby/admin/interactions/menu/next_map with storage tr:admin map
 
 execute if data storage tr:admin arena.builtin as @e[type=text_display,tag=admin.menu,tag=admin.arena] run data modify entity @s text set value '{"nbt":"arena.name","storage":"tr:admin","color":"green"}'
-execute unless data storage tr:admin arena.builtin as @e[type=text_display,tag=admin.menu,tag=admin.arena] run data modify entity @s text set value '{"nbt":"arena.name","storage":"tr:admin","color":"yellow"}'
+execute if data storage tr:admin arena.downloaded as @e[type=text_display,tag=admin.menu,tag=admin.arena] run data modify entity @s text set value '{"nbt":"arena.name","storage":"tr:admin","color":"dark_purple"}'
+execute unless data storage tr:admin arena.builtin unless data storage tr:admin arena.downloaded as @e[type=text_display,tag=admin.menu,tag=admin.arena] run data modify entity @s text set value '{"nbt":"arena.name","storage":"tr:admin","color":"yellow"}'
 
 data modify storage tr:tmp load.arena set from storage tr:admin arena
 execute positioned -32 138 9 run function tr:generation/load/start
@@ -23,3 +24,4 @@ execute positioned -32 138 9 run function tr:generation/load/start
 clone -32 138 -9 -32 149 9 -32 152 -9
 
 execute if data storage tr:admin arena.builtin run function tr:lobby/admin/interactions/menu/check/disable_builtin
+execute if data storage tr:admin arena.downloaded run function tr:lobby/admin/interactions/menu/check/disable_downloaded
