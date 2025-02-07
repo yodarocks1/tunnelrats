@@ -10,3 +10,6 @@ execute if block ~ ~ ~ minecraft:decorated_pot \
 execute if data block ~ ~ ~ Items[0].components."minecraft:custom_name" \
 		run return \
         run data modify entity @s text set from block ~ ~ ~ Items[0].components."minecraft:custom_name"
+execute if data block ~ ~ ~ Items[0].components."minecraft:stored_enchantments" \
+        run return \
+		run data modify entity @s text set from block ~ ~ ~ Items[0].components."minecraft:stored_enchantments".levels
