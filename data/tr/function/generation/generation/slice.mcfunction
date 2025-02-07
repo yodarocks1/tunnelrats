@@ -9,8 +9,8 @@ execute if score #baseBlock tmp matches 1 run fill ~ -50 -50 ~ 50 50 barrier
 execute if score #baseBlock tmp matches 2 run fill ~ -50 -50 ~ 50 50 bedrock
 
 # remove leftover entities
-execute positioned ~ -50 -50 run tp @e[type=!player,dx=1,dy=100,dz=100] ~ -64 ~
-execute positioned ~ -64 ~ run kill @e[type=!player,distance=..10]
+execute positioned ~ -50 -50 run tp @e[type=!player,tag=!tr.keep,dx=1,dy=100,dz=100] ~ -64 ~
+execute positioned ~ -64 ~ run kill @e[type=!player,tag=!tr.keep,distance=..10]
 
 # tellraw @a ["entity X: ", {"nbt":"Pos[0]","entity":"@s"}]
 # replace with generated thing
