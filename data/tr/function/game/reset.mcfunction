@@ -4,6 +4,9 @@ function tr:game/callbacks/unload
 # remove failed generation in case of emergency 
 kill @e[type=marker,tag=tr.gen]
 
+# remove runtime entities
+kill @e[type=!player,tag=tr.keep]
+
 # end game
 tp @a -9 136 0 -90 -2.7
 spawnpoint @a 0 -64 0
