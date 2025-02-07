@@ -1,0 +1,136 @@
+[
+    {
+        "function": "set_components",
+        "components": {
+            "trim": {
+                "material": {"asset_name": "red","description": {"translate": "tr.trim_material.tr","color": "#AA0000"},"ingredient": "minecraft:barrier"},
+                "pattern": "minecraft:coast"
+            }
+        },
+        "conditions": [
+            {
+                "condition": "entity_scores",
+                "entity": "this",
+                "scores": {
+                    "color": 0
+                }
+            }
+        ]
+    },
+{
+    "function": "set_components",
+    "components": {
+        "trim": {
+            "material": {"asset_name": "orange","description": {"translate": "tr.trim_material.tr","color": "#FFAA00"},"ingredient": "minecraft:barrier"},
+            "pattern": "minecraft:coast"
+        }
+    },
+        "conditions": [
+            {
+                "condition": "entity_scores",
+                "entity": "this",
+                "scores": {
+                    "color": 1
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "trim": {
+                "material": {"asset_name": "lime","description": {"translate": "tr.trim_material.tr","color": "#55FF55"},"ingredient": "minecraft:barrier"},
+                "pattern": "minecraft:coast"
+            }
+        },
+        "conditions": [
+            {
+                "condition": "entity_scores",
+                "entity": "this",
+                "scores": {
+                    "color": 2
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "trim": {
+                "material": {"asset_name": "blue","description": {"translate": "tr.trim_material.tr","color": "#0000AA"},"ingredient": "minecraft:barrier"},
+                "pattern": "minecraft:coast"
+            }
+        },
+        "conditions": [
+            {
+                "condition": "entity_scores",
+                "entity": "this",
+                "scores": {
+                    "color": 3
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "trim": {
+                "material": {"asset_name": "purple","description": {"translate": "tr.trim_material.tr","color": "#AA00AA"},"ingredient": "minecraft:barrier"},
+                "pattern": "minecraft:coast"
+            }
+        },
+        "conditions": [
+            {
+                "condition": "entity_scores",
+                "entity": "this",
+                "scores": {
+                    "color": 4
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_components",
+        "components": {
+            "trim": {
+                "material": {"asset_name": "pink","description": {"translate": "tr.trim_material.tr","color": "#FF55FF"},"ingredient": "minecraft:barrier"},
+                "pattern": "minecraft:coast"
+            }
+        },
+        "conditions": [
+            {
+                "condition": "entity_scores",
+                "entity": "this",
+                "scores": {
+                    "color": 5
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_custom_data",
+        "tag": "{team:1}",
+        "conditions": [
+            {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "team": "team1"
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_custom_data",
+        "tag": "{team:2}",
+        "conditions": [
+            {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "team": "team2"
+                }
+            }
+        ]
+    }
+]

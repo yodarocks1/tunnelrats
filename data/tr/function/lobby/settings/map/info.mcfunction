@@ -1,0 +1,1 @@
+execute if data storage tr:settings arena.info run tellraw @p[tag=interactor] ["", {"nbt":"arena.name","storage":"tr:settings","color":"green"}, ": ", {"nbt":"arena.info","storage":"tr:settings","color":"gold","interpret": true}]

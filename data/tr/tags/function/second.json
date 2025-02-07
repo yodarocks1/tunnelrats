@@ -1,0 +1,7 @@
+{
+    "values": [
+        "tr:lobby/admin/interactions/check/run",
+        "tr:lobby/admin/interactions/menu/sign/second",
+        "tr:lobby/admin/replace_blocks_check"
+    ]
+}

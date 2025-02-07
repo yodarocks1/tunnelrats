@@ -1,0 +1,8 @@
+gamerule disableRaids true
+gamerule doDaylightCycle false
+gamerule doImmediateRespawn true
+gamerule doPatrolSpawning false
+gamerule doTraderSpawning false
+gamerule doWeatherCycle false
+gamerule spectatorsGenerateChunks false
+gamerule sendCommandFeedback false

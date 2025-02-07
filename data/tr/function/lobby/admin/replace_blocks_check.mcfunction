@@ -1,0 +1,1 @@
+execute if entity @a[tag=adminArea] run function tr:lobby/admin/replace_blocks

@@ -1,0 +1,1 @@
+$execute as @e[type=block_display,tag=preview,distance=..10] at @s run tp @s ~ ~$(y) ~$(x)

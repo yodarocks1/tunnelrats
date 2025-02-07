@@ -1,0 +1,1 @@
+function tr:game/ending/stats/generic {obj: "dmg_taken", color: "#D84315"}

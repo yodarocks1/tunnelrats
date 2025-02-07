@@ -1,0 +1,2 @@
+tellraw @p[tag=interactor] [{"translate":"tr.text.setting.reset.check", "color": "red", "underlined": true, "clickEvent": {"action": "run_command","value": "/trigger reset_settings"}}]
+scoreboard players enable @p[tag=interactor] reset_settings

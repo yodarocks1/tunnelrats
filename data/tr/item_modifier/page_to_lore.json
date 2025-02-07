@@ -1,0 +1,16 @@
+[
+	{
+		"function": "set_lore",
+		"lore": [
+			{
+				"nbt": "stat[]",
+				"storage": "tr:tmp",
+				"separator": "\n",
+				"interpret": true
+			}
+		],
+		"entity": "this",
+		"mode": "replace_all",
+		"replace": true
+	}
+]

@@ -1,0 +1,25 @@
+{
+    base: {
+        x: integer,
+        y: integer,
+        z: integer,
+    }
+    totalX: integer,
+    sections: [
+        {
+            blocks: [
+                {
+                    id: string,
+                    nbt: string,
+                    p?: double,
+                }
+            ],
+            x: integer,
+            y: integer,
+            z: integer,
+        }
+    ]
+    name: string,
+    builtin?: boolean,
+    info?: string,
+}

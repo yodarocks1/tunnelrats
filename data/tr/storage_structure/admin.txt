@@ -1,0 +1,9 @@
+{
+    map: {
+        id: number,
+    },
+    arena: arena,
+    edit: {
+        name: string,
+    }
+}

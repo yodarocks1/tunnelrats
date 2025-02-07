@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "interact": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "interaction"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "tr:lobby/settings/interact/attack"
+    }
+}

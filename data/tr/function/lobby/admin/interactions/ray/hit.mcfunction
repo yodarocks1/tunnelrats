@@ -1,0 +1,1 @@
+execute align xyz as @e[tag=admin.block,dx=1,dy=0,dz=0] at @s run function tr:lobby/admin/interactions/enable/run

@@ -1,0 +1,6 @@
+execute if score @s color matches 0 run summon firework_rocket ~ ~2 ~ {LifeTime:1,FireworksItem:{id:"firework_rocket",count:1,components:{fireworks:{explosions:[{shape:"small_ball",colors:[I;16711680]}]}}}}
+execute if score @s color matches 1 run summon firework_rocket ~ ~2 ~ {LifeTime:1,FireworksItem:{id:"firework_rocket",count:1,components:{fireworks:{explosions:[{shape:"small_ball",colors:[I;16761856]}]}}}}
+execute if score @s color matches 2 run summon firework_rocket ~ ~2 ~ {LifeTime:1,FireworksItem:{id:"firework_rocket",count:1,components:{fireworks:{explosions:[{shape:"small_ball",colors:[I;65293]}]}}}}
+execute if score @s color matches 3 run summon firework_rocket ~ ~2 ~ {LifeTime:1,FireworksItem:{id:"firework_rocket",count:1,components:{fireworks:{explosions:[{shape:"small_ball",colors:[I;1638655]}]}}}}
+execute if score @s color matches 4 run summon firework_rocket ~ ~2 ~ {LifeTime:1,FireworksItem:{id:"firework_rocket",count:1,components:{fireworks:{explosions:[{shape:"small_ball",colors:[I;11403519]}]}}}}
+execute if score @s color matches 5 run summon firework_rocket ~ ~2 ~ {LifeTime:1,FireworksItem:{id:"firework_rocket",count:1,components:{fireworks:{explosions:[{shape:"small_ball",colors:[I;16711892]}]}}}}

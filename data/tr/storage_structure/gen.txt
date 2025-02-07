@@ -1,0 +1,11 @@
+{
+    template: arena,
+    section: section,
+    position: {
+        fromX: int,
+        fromZ: int,
+        toX: int,
+        toZ: int,
+    },
+    dupeX: int
+}

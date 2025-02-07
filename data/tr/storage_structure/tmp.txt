@@ -1,0 +1,22 @@
+{
+    load: {
+        name: string,
+        slice: arena slice,
+        block: arena block,
+        arena: arena,
+    }
+    newSetup: arena,
+    input: string,
+    new: {
+        name: string
+    }
+    util: {
+        float: double,
+    },
+    bed: {
+        totalX: int,
+        color1: string,
+        color2: string,
+    },
+    preview: arena
+}

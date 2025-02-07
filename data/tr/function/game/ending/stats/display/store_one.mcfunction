@@ -1,0 +1,3 @@
+$execute unless data storage tr:stat storage[{obj: "$(obj)"}].scores[{name: "$(name)"}] run data modify storage tr:stat storage[{obj: "$(obj)"}].scores append value {name: "$(name)", score: 0}
+$data modify storage tr:stat storage[{obj: "$(obj)"}].scores[{name: "$(name)"}].score set value $(score)
+# $tellraw @a {"text": 'data modify storage tr:stat storage[{obj: "$(obj)"}].scores[{name: "$(name)"}].score set value $(score)'}

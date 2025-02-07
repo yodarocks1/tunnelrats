@@ -1,0 +1,288 @@
+{
+    "criteria": {
+        "equip_team1": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "any_of",
+                        "terms": [
+                            {
+                                "condition": "all_of",
+                                "terms": [
+                                    {
+                                        "condition": "entity_properties",
+                                        "entity": "this",
+                                        "predicate": {
+                                            "equipment": {
+                                                "head": {
+                                                    "items": "#tr:helmets"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "condition": "inverted",
+                                        "term": {
+                                            "condition": "entity_properties",
+                                            "entity": "this",
+                                            "predicate": {
+                                                "equipment": {
+                                                    "head": {
+                                                        "components": {
+                                                            "custom_data": "{team:1}" 
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "condition": "all_of",
+                                "terms": [
+                                    {
+                                        "condition": "entity_properties",
+                                        "entity": "this",
+                                        "predicate": {
+                                            "equipment": {
+                                                "chest": {
+                                                    "items": "#tr:chestplates"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "condition": "inverted",
+                                        "term": {
+                                            "condition": "entity_properties",
+                                            "entity": "this",
+                                            "predicate": {
+                                                "equipment": {
+                                                    "chest": {
+                                                        "components": {"custom_data":"{team:1}"}
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "condition": "all_of",
+                                "terms": [
+                                    {
+                                        "condition": "entity_properties",
+                                        "entity": "this",
+                                        "predicate": {
+                                            "equipment": {
+                                                "legs": {
+                                                    "items": "#tr:leggings"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "condition": "inverted",
+                                        "term": {
+                                            "condition": "entity_properties",
+                                            "entity": "this",
+                                            "predicate": {
+                                                "equipment": {
+                                                    "legs": {
+                                                        "components": {"custom_data":"{team:1}"}
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "condition": "all_of",
+                                "terms": [
+                                    {
+                                        "condition": "entity_properties",
+                                        "entity": "this",
+                                        "predicate": {
+                                            "equipment": {
+                                                "feet": {
+                                                    "items": "#tr:boots"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "condition": "inverted",
+                                        "term": {
+                                            "condition": "entity_properties",
+                                            "entity": "this",
+                                            "predicate": {
+                                                "equipment": {
+                                                    "feet": {
+                                                        "components": {"custom_data":"{team:1}"}
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "team": "team1"
+                        }
+                    }
+                ]
+            }
+        },
+        "equip_team2": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "any_of",
+                        "terms": [
+                            {
+                                "condition": "all_of",
+                                "terms": [
+                                    {
+                                        "condition": "entity_properties",
+                                        "entity": "this",
+                                        "predicate": {
+                                            "equipment": {
+                                                "head": {
+                                                    "items": "#tr:helmets"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "condition": "inverted",
+                                        "term": {
+                                            "condition": "entity_properties",
+                                            "entity": "this",
+                                            "predicate": {
+                                                "equipment": {
+                                                    "head": {
+                                                        "components": {"custom_data":"{team:2}"}
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "condition": "all_of",
+                                "terms": [
+                                    {
+                                        "condition": "entity_properties",
+                                        "entity": "this",
+                                        "predicate": {
+                                            "equipment": {
+                                                "chest": {
+                                                    "items": "#tr:chestplates"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "condition": "inverted",
+                                        "term": {
+                                            "condition": "entity_properties",
+                                            "entity": "this",
+                                            "predicate": {
+                                                "equipment": {
+                                                    "chest": {
+                                                        "components": {"custom_data":"{team:2}"}
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "condition": "all_of",
+                                "terms": [
+                                    {
+                                        "condition": "entity_properties",
+                                        "entity": "this",
+                                        "predicate": {
+                                            "equipment": {
+                                                "legs": {
+                                                    "items": "#tr:leggings"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "condition": "inverted",
+                                        "term": {
+                                            "condition": "entity_properties",
+                                            "entity": "this",
+                                            "predicate": {
+                                                "equipment": {
+                                                    "legs": {
+                                                        "components": {"custom_data":"{team:2}"}
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "condition": "all_of",
+                                "terms": [
+                                    {
+                                        "condition": "entity_properties",
+                                        "entity": "this",
+                                        "predicate": {
+                                            "equipment": {
+                                                "feet": {
+                                                    "items": "#tr:boots"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "condition": "inverted",
+                                        "term": {
+                                            "condition": "entity_properties",
+                                            "entity": "this",
+                                            "predicate": {
+                                                "equipment": {
+                                                    "feet": {
+                                                        "components": {"custom_data":"{team:2}"}
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "team": "team2"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [["equip_team1", "equip_team2"]],
+    "rewards": {
+        "function": "tr:game/player/equip_armor"
+    }
+}

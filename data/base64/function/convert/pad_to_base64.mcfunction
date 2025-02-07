@@ -1,0 +1,5 @@
+$execute if score sectionLength b64.tmp matches 5 run data modify storage b64:b64 nextBlock set value "$(nextBlock)0"
+$execute if score sectionLength b64.tmp matches 4 run data modify storage b64:b64 nextBlock set value "$(nextBlock)00"
+$execute if score sectionLength b64.tmp matches 3 run data modify storage b64:b64 nextBlock set value "$(nextBlock)000"
+$execute if score sectionLength b64.tmp matches 2 run data modify storage b64:b64 nextBlock set value "$(nextBlock)0000"
+$execute if score sectionLength b64.tmp matches 1 run data modify storage b64:b64 nextBlock set value "$(nextBlock)00000"

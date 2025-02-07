@@ -1,0 +1,10 @@
+{
+    arenas: arena[],
+    teams: {
+        team1: {
+            color: string,
+            colorText: string,
+        }
+        team2: ...
+    }
+}

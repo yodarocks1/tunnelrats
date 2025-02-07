@@ -1,0 +1,1 @@
+execute as @e[type=marker,tag=admin.sign] at @s if block ~ ~ ~ air run function tr:lobby/admin/interactions/menu/sign/cancel
