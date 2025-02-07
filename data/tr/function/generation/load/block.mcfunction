@@ -3,6 +3,8 @@ execute unless data storage tr:tmp load.slice.blocks[0] run return 0
 data modify storage tr:tmp load.block set from storage tr:tmp load.slice.blocks[0]
 data remove storage tr:tmp load.slice.blocks[0]
 
+execute if data storage tr:tmp load.block.nbt.auto run data modify storage tr:tmp load.block.nbt.auto set value false
+
 # block
 function tr:generation/load/setblock with storage tr:tmp load.block
 execute if block ~ ~ ~ air run setblock ~ ~ ~ barrier

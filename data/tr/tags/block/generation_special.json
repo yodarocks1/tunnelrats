@@ -4,6 +4,7 @@
         "spawner",
         "structure_block",
         "lava_cauldron",
-        "water_cauldron"
+        "water_cauldron",
+        "command_block"
     ]
 }
