@@ -19,3 +19,6 @@ scoreboard players operation @a[team=team1] color = #team.color.1 settings
 scoreboard players operation @a[team=team2] color = #team.color.2 settings
 
 scoreboard players set #game status 3
+
+# Players ready callback
+function tr:game/callbacks/ready/players

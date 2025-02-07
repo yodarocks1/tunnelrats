@@ -1,3 +1,6 @@
+# Arena ready callback
+function tr:game/callbacks/ready/arena
+
 scoreboard players set #generation status 0
 kill @s
 

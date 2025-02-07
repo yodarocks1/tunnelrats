@@ -7,3 +7,6 @@ schedule function tr:game/reset 10s
 
 bossbar set tr:grace.team1 players
 bossbar set tr:grace.team2 players
+
+# Game end callback
+function tr:game/callbacks/end

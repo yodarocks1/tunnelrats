@@ -9,3 +9,6 @@ execute if score #aftergame timer matches ..100 if score #tmp tmp matches 0 as @
 
 # 5s
 execute if score #aftergame timer matches 100 run gamemode spectator @a[gamemode=!spectator]
+
+# Game ending tick callback
+function tr:game/callbacks/tick/ending

@@ -35,3 +35,6 @@ function tr:game/grace/run
 
 # anti nether portal
 execute as @a at @s if block ~ ~ ~ nether_portal run setblock ~ ~ ~ air
+
+# Game running tick callback
+function tr:game/callbacks/tick/running

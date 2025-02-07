@@ -1,0 +1,1 @@
+$function tr:downloaded_arenas/$(path)/$(wait_to_start)

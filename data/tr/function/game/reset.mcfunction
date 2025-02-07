@@ -1,3 +1,6 @@
+# Game reset/unload callback
+function tr:game/callbacks/unload
+
 # remove failed generation in case of emergency 
 kill @e[type=marker,tag=tr.gen]
 

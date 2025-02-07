@@ -6,7 +6,9 @@ $execute unless data storage tr:downloads $(user_id) run data modify storage tr:
 # Set the data
 $data modify storage tr:downloads $(user_id).$(map_id) set value $(data)
 $data modify storage tr:downloads $(user_id).$(map_id).id set value "$(user_id).$(map_id)"
-$data modify storage tr:downloads $(user_id).$(map_id).path set value "$(user_id)/$(map_id)"
+$data modify storage tr:downloads $(user_id).$(map_id).on.path set value "$(user_id)/$(map_id)"
+$data modify storage tr:downloads $(user_id).$(map_id).on.tick.path set value "$(user_id)/$(map_id)"
+$data modify storage tr:downloads $(user_id).$(map_id).on.ready.path set value "$(user_id)/$(map_id)"
 $data modify storage tr:downloads $(user_id).$(map_id).version set value {"$(version)":true,value:$(version)}
 $data modify storage tr:downloads $(user_id).$(map_id).downloaded set value true
 $data modify storage tr:downloads $(user_id).$(map_id).name set value "$(name)"

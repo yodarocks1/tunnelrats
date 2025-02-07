@@ -26,3 +26,8 @@ execute if score #gameStart timer matches ..0 run gamemode survival @a[gamemode=
 execute if score #gameStart timer matches ..0 run title @a times 0t 5t 5t
 execute if score #gameStart timer matches ..0 run title @a[gamemode=spectator] times 5t 5s 5t
 execute if score #gameStart timer matches ..0 run title @a title [{"translate": "tr.title.game.start","color": "green"}]
+
+# Game start callback
+execute if score #gameStart timer matches ..0 run function tr:game/callbacks/start
+# Game waiting to start tick callback
+execute if score #gameStart timer matches 1.. run function tr:game/callbacks/tick/wait_to_start
