@@ -122,3 +122,6 @@ gamerule spawnRadius 0
 gamerule maxCommandChainLength 1000000
 gamerule playersNetherPortalCreativeDelay 2000000000
 gamerule playersNetherPortalDefaultDelay 2000000000
+
+# load arenas from datapacks
+function #tr:load_arenas
