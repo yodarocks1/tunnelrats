@@ -1,3 +1,6 @@
+# Mark for flipping
+function tr:generation/flip_marking with storage tr:gen template
+
 # Arena ready callback
 function tr:game/callbacks/ready/arena
 

@@ -5,7 +5,7 @@ function tr:game/callbacks/unload
 kill @e[type=marker,tag=tr.gen]
 
 # remove runtime entities
-kill @e[type=!player,tag=tr.keep]
+kill @e[type=!player,tag=tr.map]
 
 # end game
 tp @a -9 136 0 -90 -2.7
