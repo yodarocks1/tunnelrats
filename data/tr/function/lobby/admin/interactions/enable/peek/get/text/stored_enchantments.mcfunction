@@ -1,0 +1,2 @@
+$execute if data block ~ ~ ~ $(nbt).components."minecraft:stored_enchantments".levels \
+         run function tr:lobby/admin/interactions/enable/peek/run/translate_enchantments with block ~ ~ ~ $(nbt).components."minecraft:stored_enchantments"
