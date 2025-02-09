@@ -19,6 +19,7 @@ scoreboard objectives add z dummy
 scoreboard objectives add p dummy
 
 scoreboard players set -1 const -1
+scoreboard players set 0 const 0
 scoreboard players set 1 const 1
 scoreboard players set 2 const 2
 scoreboard players set 3 const 3
@@ -124,4 +125,6 @@ gamerule playersNetherPortalCreativeDelay 2000000000
 gamerule playersNetherPortalDefaultDelay 2000000000
 
 # load arenas from datapacks
+data modify storage tr:tmp announce_arena_version_update set value true
 function #tr:load_arenas
+data remove storage tr:tmp announce_arena_version_update

@@ -23,5 +23,8 @@ execute positioned -32 138 9 run function tr:generation/load/start
 # copy for dirty doublecheck
 clone -32 138 -9 -32 149 9 -32 152 -9
 
-execute if data storage tr:admin arena.builtin run function tr:lobby/admin/interactions/menu/check/disable_builtin
-execute if data storage tr:admin arena.downloaded run function tr:lobby/admin/interactions/menu/check/disable_downloaded
+# disable invalid menu items
+function tr:lobby/admin/interactions/menu/check/disable_invalid
+
+# disable editing if saving is disabled
+function tr:lobby/admin/interactions/menu/check/disable_editing

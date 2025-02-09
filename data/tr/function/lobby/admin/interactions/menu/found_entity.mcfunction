@@ -1,5 +1,10 @@
 execute if entity @s[tag=disabled] run return 0
 
+# remove help block
+setblock -26 138 10 air
+
+execute if entity @s[tag=admin.reload] run function tr:lobby/admin/interactions/menu/reload
+
 execute if entity @s[tag=admin.arena.prev] run scoreboard players set #interaction tmp -1
 execute if entity @s[tag=admin.arena.prev] run function tr:lobby/admin/interactions/menu/next
 execute if entity @s[tag=admin.arena.next] run scoreboard players set #interaction tmp 1

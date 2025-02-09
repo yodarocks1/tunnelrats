@@ -3,3 +3,4 @@ tag @e[tag=admin.menu] add disabled
 execute at @s run tag @e[type=item_display,limit=1,sort=nearest] remove disabled
 execute as @e[tag=admin.menu,tag=disabled,type=item_display] run data modify entity @s item.components."minecraft:custom_model_data".floats[0] set value 8f
 execute as @e[tag=admin.menu,tag=disabled,type=interaction] run data modify entity @s response set value 0b
+execute as @e[tag=admin.menu,tag=disabled_override,tag=hide_on_disable] at @s run tp ~ ~100 ~
