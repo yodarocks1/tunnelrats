@@ -20,3 +20,5 @@ execute store result score #r tmp run fill -30 138 -10 -33 150 10 air replace wa
 execute if score #r tmp matches 1.. run tellraw @p[tag=adminArea] [{"translate": "tr.text.admin.no_fluids", "color": "red"}]
 execute store result score #r tmp run fill -30 138 -10 -33 150 10 air replace lava
 execute if score #r tmp matches 1.. run tellraw @p[tag=adminArea] [{"translate": "tr.text.admin.no_fluids", "color": "red"}]
+
+execute if block -26 138 10 minecraft:lectern[has_book=false] run setblock -26 138 10 air
