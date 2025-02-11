@@ -1,1 +1,1 @@
-item replace entity @s armor.head with stick[custom_model_data={floats:[7]},enchantments={binding_curse: 1}, item_name='{"translate": "tr.crown.name"}']
+item replace entity @s armor.head with stick[custom_model_data={floats:[7]},enchantments={binding_curse: 1}, item_name='{"translate": "tr.crown.name"}',equippable={slot:"head"}]
