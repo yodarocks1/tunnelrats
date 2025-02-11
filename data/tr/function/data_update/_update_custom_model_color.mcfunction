@@ -1,0 +1,2 @@
+$data remove entity @s $(item_path).components."minecraft:custom_model_data".colors[$(index)]
+$data modify entity @s $(item_path).components."minecraft:custom_model_data".colors insert $(index) value $(color)
