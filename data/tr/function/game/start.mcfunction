@@ -82,6 +82,10 @@ scoreboard objectives add stat.dmg_taken.round minecraft.custom:minecraft.damage
 # show advert
 schedule function tr:lobby/ad/global_info 1s
 
+# setup bed missing display
+function tr:game/teams/setdisplay with storage tr:settings teams.team1
+function tr:game/teams/setdisplay with storage tr:settings teams.team2
+
 # reset spawnpoints
 spawnpoint @a 0 200 0
 

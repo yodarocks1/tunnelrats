@@ -15,3 +15,4 @@ $execute if score #tmp tmp matches 2 run fill -13 137 14 -7 146 15 $(color2)_con
 # add to storage
 $data modify storage tr:settings teams.team$(team).color set value "$(color2)"
 $data modify storage tr:settings teams.team$(team).colorText set value "$(color)"
+$data modify storage tr:settings teams.team$(team).colorList set value "$(colorList)"

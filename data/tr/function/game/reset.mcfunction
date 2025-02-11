@@ -14,6 +14,12 @@ gamemode adventure @a
 scoreboard players set #game status 0
 scoreboard players add #current activeGame 1
 
+# clear bedless states
+scoreboard objectives remove team1.bedless
+scoreboard objectives remove team2.bedless
+scoreboard objectives add team1.bedless dummy {"translate": "tr.text.bedless"}
+scoreboard objectives add team2.bedless dummy {"translate": "tr.text.bedless"}
+
 team empty .dead
 team empty spectator
 team empty team1

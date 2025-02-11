@@ -12,6 +12,8 @@ scoreboard objectives add leave custom:leave_game
 scoreboard objectives add activeGame dummy
 scoreboard objectives add credits dummy
 scoreboard objectives add reset_settings trigger {"translate": "tr.text.name.reset_settings"}
+scoreboard objectives add team1.bedless dummy {"translate": "tr.text.bedless"}
+scoreboard objectives add team2.bedless dummy {"translate": "tr.text.bedless"}
 
 scoreboard objectives add x dummy
 scoreboard objectives add y dummy
@@ -95,7 +97,7 @@ scoreboard objectives add stat.dmg_taken.round minecraft.custom:minecraft.damage
 scoreboard objectives add stat.dmg_taken.total minecraft.custom:minecraft.damage_taken
 
 # Data Setup
-execute unless data storage tr:settings teams.team1 run data merge storage tr:settings {teams:{team1:{color:"red",colorText:"red"},team2:{color:"blue",colorText:"blue"}}}
+execute unless data storage tr:settings teams.team1 run data merge storage tr:settings {teams:{team1:{color:"red",colorText:"red",colorList:11141120,team:1},team2:{color:"blue",colorText:"blue",colorList:170,team:2}}}
 execute unless data storage tr:settings arena.name run data modify storage tr:settings arena.name set from storage tr:settings arenas[0].name
 
 execute unless score #current activeGame = #current activeGame run scoreboard players set #current activeGame 1

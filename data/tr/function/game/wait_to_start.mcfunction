@@ -6,6 +6,9 @@ title @a subtitle [""]
 execute as @a[team=!spectator,nbt={SpawnY: 200}] run title @s subtitle [{"translate": "tr.title.game.bed_warning","color": "red"}]
 title @a title [""]
 
+# bed missing display
+execute as @a run function tr:game/bed/check with entity @s
+
 # timer title
 scoreboard players operation #tmp tmp = #gameStart timer
 scoreboard players operation #tmp tmp /= 20 const

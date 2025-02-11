@@ -36,5 +36,8 @@ function tr:game/grace/run
 # anti nether portal
 execute as @a at @s if block ~ ~ ~ nether_portal run setblock ~ ~ ~ air
 
+# check for bedless players
+execute as @a[gamemode=survival] run function tr:game/bed/check with entity @s
+
 # Game running tick callback
 function tr:game/callbacks/tick/running
